@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 /**
  * Created by r3bers on 19.02.2016.
- * Тестовие задания. Начальный 3. Площадь и периметр прямоугольника.
+ * Тестовие задания. Начальный 4. Длина окружности.
  */
-public class Begin3 {
+public class Begin4 {
     private static Scanner scanner = new Scanner(System.in);
 
     public static BigDecimal inputNum (String zapros) {
@@ -31,11 +31,8 @@ public class Begin3 {
     }
 
     public static void main(String argc[]) {
-        System.out.print("Введите сторону 'a': ");
-        BigDecimal a = inputNum("Сторона 'a'");
-        System.out.print("Введите сторону 'b': ");
-        BigDecimal b = inputNum("Сторона 'b'");
-        System.out.print("Площадь прямоугольника S = " + a.multiply(b).toString());
-        System.out.println(" и периметр P = " + a.add(b).multiply(new BigDecimal("2")).toString());
+        System.out.print("Введите диаметр окружонсти 'd': ");
+        BigDecimal a = inputNum("Диаметр 'd'");
+        System.out.println("Длина окруджности L = " + a.multiply(new BigDecimal("3.14")).toString());
     }
 }
