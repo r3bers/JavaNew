@@ -4,6 +4,7 @@ import java.util.Scanner;
 /**
  * Created by r3bers on 19.02.2016.
  * Тестовие задания. Начальный 4. Длина окружности.
+ * Коммит надо не забывать редактировать во время Коммита, потому как Push уже не даёт поменять.
  */
 public class Begin4 {
     private static Scanner scanner = new Scanner(System.in);
