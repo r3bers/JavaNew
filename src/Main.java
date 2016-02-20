@@ -35,24 +35,5 @@ public class Main {
         double midValue = summ / y.length;
         System.out.println(midValue + " , " + maxValue);
 
-//Задача 0.1 Пузырьковая сортировка
-
-        int z[] = new int[10];
-        Random rnd = new Random();
-        for (int i = 0; i < z.length; i++) {
-            z[i] = rnd.nextInt(100);
-        }
-        System.out.print(Arrays.toString(z) + " -> ");
-        for (int i = 0; i < z.length - 1; i++) {
-            for (int j = 0; j < z.length - i - 1; j++) {
-                if (z[j] > z[j + 1]) {
-                    int k = z[j];
-                    z[j] = z[j + 1];
-                    z[j + 1] = k;
-                }
-            }
-        }
-        System.out.println(Arrays.toString(z));
-
     }
 }
