@@ -3,7 +3,8 @@ import java.util.Random;
 
 /**
  * Created by r3bers on 21.02.16.
- * BubbleSort из Заданий к Geekbrains 1
+ * Задание от Geekbrains
+ * Самостоятельно реализовать пузырьковую сортировку массива.
  */
 public class BubbleSort {
     public static void main(String[] args) {
