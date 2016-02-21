@@ -1,7 +1,3 @@
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
-
 /**
  * Created by r3bers on 13.02.16.
  * Main класс ддля экспериментов.
