@@ -6,11 +6,11 @@ import java.math.BigDecimal;
  */
 public class Main {
     public static void main(String argc[]) {
-        System.out.println(new BigDecimal("2983742897489215178572974124").multiply(new BigDecimal("394058345839045823095809358039845")).multiply(new BigDecimal("43957398579357934592375982374682739579327597354987359")));
         BigDecimal my = new BigDecimal("2");
         long step = 1;
         while (true) {
             step = step * 2;
+            long startTime = System.currentTimeMillis();
             try {
                 my = my.multiply(my);
             } catch (Exception e) {
@@ -18,7 +18,8 @@ public class Main {
                 break;
             }
             //System.out.println(my);
-            System.out.println(step + "-ая степень 2 содержит " + my.toString().length() + " знаков в 10-чной системе. " + step / 256 + " байт.");
+            System.out.println(step + "-ая степень 2 содержит " + my.toString().length() + " знаков в 10-чной системе "
+                    + step / 8 + " байт. Умножение выполнено за "+ (System.currentTimeMillis()-startTime) + " ms");
         }
     }
 }
