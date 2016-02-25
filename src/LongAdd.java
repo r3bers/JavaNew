@@ -41,11 +41,11 @@ public class LongAdd {
             iBuf = iBuf / 10;
             i--;
         }
-        if ((i<0)&&(iBuf==1)) {
+        if ((i < 0) && (iBuf == 1)) {
             sBuf = "1" + sBuf;
         }
-        if ((i>=0)&&(iBuf==0)){
-            sBuf = b.substring(0,i+1)+sBuf;
+        if ((i >= 0) && (iBuf == 0)) {
+            sBuf = b.substring(0, i + 1) + sBuf;
         }
 
         System.out.println("Получилось:\t\t" + sBuf);

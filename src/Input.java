@@ -9,8 +9,7 @@ import java.util.Scanner;
 public class Input {
 
     public static void main(String argc[]) {
-        for (String val:argc
-             ) {
+        for (String val : argc) {
             System.out.println(val);
         }
     }

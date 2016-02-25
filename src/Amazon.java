@@ -20,14 +20,14 @@ public class Amazon {
         Arrays.sort(a); // Тут время не считаю потому что условие отсортированный массив
         int minB = summ - a[a.length - 1];
         System.out.println("Минимальное слагаемое:" + minB);
-        int startB = Math.abs(Arrays.binarySearch(a,minB));
+        int startB = Math.abs(Arrays.binarySearch(a, minB));
         System.out.println("Индекс старта: " + startB);
 
         boolean hasSum = false;
         for (int i = startB; i < a.length; i++) {
-            int isk = summ-a[i];
-            if (Arrays.binarySearch(a,isk)>0) {
-                System.out.println("Bingo: " + a[i] + " + " + isk + " = " + summ + ". Выполнено за "+ (i-startB) + " операций.");
+            int isk = summ - a[i];
+            if (Arrays.binarySearch(a, isk) > 0) {
+                System.out.println("Bingo: " + a[i] + " + " + isk + " = " + summ + ". Выполнено за " + (i - startB) + " операций.");
                 hasSum = true;
                 break;
             }

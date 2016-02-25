@@ -58,8 +58,8 @@ public class Primes {
                 }
             }
         }
-        start = System.currentTimeMillis()-start;
-        System.out.println(toCons.substring(0,toCons.length()-2)+" }");
+        start = System.currentTimeMillis() - start;
+        System.out.println(toCons.substring(0, toCons.length() - 2) + " }");
         System.out.println("Затрачено " + start + " мс.");
     }
 }
