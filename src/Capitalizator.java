@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
  */
 public class Capitalizator {
     public static void main(String[] args) {
-        String str = "ЭТО настояшая пРоверка Букв!";
+        String str = "ЭТО настояшая пРоверка Букв я!";
         System.out.println(str);
 
         StringTokenizer st = new StringTokenizer(str, " \t\n\r,.!?");
