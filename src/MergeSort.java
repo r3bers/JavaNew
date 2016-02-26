@@ -78,7 +78,7 @@ public class MergeSort {
         // Инициализируем рандомный массив и показываем его
         int[] inputArray = new int[25];
         Random rnd = new Random();
-        for (int i = 0; i < inputArray.length; i++) inputArray[i] = rnd.nextInt(255)-128;
+        for (int i = 0; i < inputArray.length; i++) inputArray[i] = rnd.nextInt(255) - 128;
         System.out.println(Arrays.toString(inputArray));
 
         RecurseSort myRec = new RecurseSort(inputArray);

@@ -22,11 +22,8 @@ public class TreeMapSort {
 //        System.out.println(Arrays.toString(inputArray));
         Map<Integer, Integer> myMap = new TreeMap<>();
         for (int value : inputArray) {
-            if (myMap.containsKey(value)) {
-                myMap.put(value, myMap.get(value) + 1);
-            } else {
-                myMap.put(value, 1);
-            }
+            if (myMap.containsKey(value)) myMap.put(value, myMap.get(value)+1);
+            else myMap.put(value, 1);
         }
         int j = 0;
         for (Map.Entry<Integer, Integer> entry : myMap.entrySet()) {
