@@ -28,7 +28,6 @@ public class Main {
                 System.out.println(e.getMessage());
                 break;
             }
-            //System.out.println(my);
             System.out.println(step + "-ая степень 2 содержит " + my.toString().length() + " знаков в 10-чной системе "
                     + step / 8 + " байт. Умножение выполнено за " + (System.currentTimeMillis() - startTime) + " ms");
         }
